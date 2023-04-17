@@ -1,0 +1,126 @@
+.menu-title {
+  text-align: center;
+  font-size: 65px;
+  line-height: 76px;
+  color: #bd171b;
+  font-weight: 800;
+  margin-bottom: 20px;
+
+  @include tablet {
+    margin-bottom: 30px;
+  }
+  @include desktop {
+    margin-bottom: 70px;
+  }
+  @include max {
+    margin-bottom: 100px;
+  }
+}
+
+.menu-list {
+  display: flex;
+  flex-wrap: wrap;
+  @include mobile {
+    gap: 50px;
+    padding: 40px 28px 20px 28px;
+  }
+  @include tablet {
+    gap: 50px;
+    padding: 80px 48px 20px 48px;
+  }
+  @include desktop {
+    gap: 50px;
+    padding: 80px 48px 20px 48px;
+  }
+  @include max {
+    gap: 184px;
+    padding: 100px 68px 298px 68px;
+  }
+}
+
+.menu-item {
+  @include desktop {
+    flex-basis: calc((100% - 100px) / 2);
+  }
+  @include max {
+    flex-basis: calc((100% - 184px) / 2);
+  }
+}
+
+.menu-card-title {
+  display: block;
+  color: #bd171b;
+  font-size: 30px;
+  line-height: 46px;
+  font-weight: 800;
+  text-align: center;
+  margin-bottom: 46px;
+
+  @include tablet {
+    font-size: 45px;
+    line-height: 56px;
+  }
+  @include desktop {
+    font-size: 60px;
+    line-height: 76px;
+  }
+  @include max {
+    font-size: 65px;
+    line-height: 76px;
+  }
+}
+
+.menu-card-descr {
+  font-size: 25px;
+  line-height: 33px;
+  text-align: center;
+  margin-bottom: 30px;
+
+  @include tablet {
+    font-size: 35px;
+    line-height: 43px;
+    margin-bottom: 70px;
+  }
+  @include desktop {
+    font-size: 40px;
+    line-height: 53px;
+    margin-bottom: 118px;
+  }
+  @include max {
+    font-size: 45px;
+    line-height: 53px;
+    margin-bottom: 118px;
+  }
+}
+
+.menu-card-descr-size {
+  @include desktop {
+    margin-bottom: 12px;
+  }
+  @include max {
+    margin-bottom: 76px;
+  }
+}
+
+.menu-card-descr-special {
+  @include desktop {
+    margin-bottom: 142px;
+  }
+  @include max {
+    margin-bottom: 75px;
+  }
+}
+
+.span-title {
+  margin-bottom: 30px;
+
+  @include tablet {
+    margin-bottom: 70px;
+  }
+  @include desktop {
+    margin-bottom: 158px;
+  }
+  @include max {
+    margin-bottom: 150px;
+  }
+}

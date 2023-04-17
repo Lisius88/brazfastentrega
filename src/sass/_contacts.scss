@@ -1,0 +1,67 @@
+.contacts-container {
+  color: #ffffff;
+  background-color: rgb(255, 102, 0);
+  background-image: url('../images/contacts.png');
+  background-size: cover;
+  font-weight: 800;
+  padding: 20px 44px 78px 90px;
+  font-size: 15px;
+  line-height: 20px;
+  @include tablet {
+    padding: 20px 44px 178px 290px;
+    font-size: 25px;
+    line-height: 30px;
+  }
+  @include desktop {
+    padding: 101px 44px 378px 650px;
+    font-size: 35px;
+    line-height: 40px;
+  }
+
+  @include max {
+    padding: 101px 44px 378px 1050px;
+    font-size: 50px;
+    line-height: 58px;
+  }
+}
+
+.contacts-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  @include tablet {
+    gap: 10px;
+  }
+  @include desktop {
+    gap: 50px;
+  }
+  @include max {
+    gap: 119px;
+  }
+}
+
+.contacts-icon {
+  width: 30px;
+  height: 30px;
+  margin-right: 16px;
+
+  @include tablet {
+    width: 50px;
+    height: 50px;
+    margin-right: 16px;
+  }
+  @include desktop {
+    margin-right: 32px;
+    width: 100px;
+    height: 100px;
+  }
+  @include max {
+    margin-right: 62px;
+  }
+}
+
+.contacts-item {
+  display: flex;
+  align-items: center;
+}

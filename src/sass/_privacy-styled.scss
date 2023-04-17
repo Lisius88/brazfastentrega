@@ -1,0 +1,47 @@
+.privacy-container {
+  padding: 15px 15px 15px 15px;
+  font-size: 25px;
+  line-height: 33px;
+  color: #ffffff;
+  background-color: rgb(255, 102, 0);
+  font-weight: 600;
+  background-image: url('../images/privacy.jpg');
+  background-size: cover;
+  @include tablet {
+    padding: 52px 231px 69px 35px;
+    font-size: 40px;
+    line-height: 33px;
+  }
+  @include desktop {
+    padding: 52px 331px 69px 45px;
+    font-size: 35px;
+    line-height: 43px;
+  }
+
+  @include max {
+    padding: 72px 831px 79px 127px;
+    font-size: 45px;
+    line-height: 53px;
+  }
+}
+
+.second-privacy-container {
+  font-size: 20px;
+  line-height: 23px;
+  padding: 26px 15px 26px 15px;
+  @include tablet {
+    font-size: 35px;
+    line-height: 43px;
+    padding: 46px 35px 46px 35px;
+  }
+  @include desktop {
+    padding: 56px 45px 56px 45px;
+    font-size: 30px;
+    line-height: 33px;
+  }
+  @include max {
+    font-size: 45px;
+    line-height: 53px;
+    padding: 56px 45px 56px 127px;
+  }
+}

@@ -1,0 +1,97 @@
+.reviews-container {
+  color: #ffffff;
+  text-align: center;
+  background-image: url('../images/reviews.jpg');
+  background-size: cover;
+  font-weight: 800;
+  font-size: 25px;
+  line-height: 33px;
+  padding: 15px 15px 15px 15px;
+
+  @include tablet {
+    padding: 102px 54px 105px 20px;
+    font-size: 35px;
+    line-height: 43px;
+  }
+  @include desktop {
+    padding: 142px 354px 205px 60px;
+    font-size: 45px;
+    line-height: 53px;
+  }
+  @include max {
+    padding: 242px 864px 395px 90px;
+    font-size: 45px;
+    line-height: 53px;
+  }
+}
+
+.reviews-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0px;
+
+  @include tablet {
+    gap: 0px;
+  }
+  @include desktop {
+    gap: 50px;
+  }
+  @include max {
+    gap: 128px;
+  }
+}
+
+.reviews-item {
+  flex-basis: 100%;
+
+  @include tablet {
+    flex-basis: 100%;
+  }
+  @include desktop {
+    flex-basis: calc((100% - 50px) / 2);
+  }
+  @include max {
+    flex-basis: calc((100% - 128px) / 2);
+  }
+}
+
+.second-reviews-container {
+  color: #ffffff;
+  background-color: rgb(255, 102, 0);
+  font-weight: 600;
+  background-image: url('../images/reviews2.jpg');
+  background-size: cover;
+  text-align: center;
+  font-size: 25px;
+  line-height: 33px;
+
+  padding: 25px 25px 25px 25px;
+  @include tablet {
+    padding: 105px 54px 105px 54px;
+    font-size: 35px;
+    line-height: 43px;
+  }
+  @include desktop {
+    padding: 255px 259px 300px 259px;
+    font-size: 40px;
+    line-height: 47px;
+  }
+  @include max {
+    padding: 555px 559px 400px 559px;
+    font-size: 40px;
+    line-height: 47px;
+  }
+}
+
+.reviews-button {
+  background-color: #bd171b;
+
+  &:hover {
+    background-color: #860c0e;
+    border: 3px solid #ffffff;
+  }
+  &:active {
+    background-color: #740b0c;
+    border: 3px solid #ffffff;
+  }
+}
